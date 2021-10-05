@@ -11,7 +11,7 @@ import Foundation
 
 // Object
 // Protocol
-// Reference to Interactor, Router and View
+// Holds all the references to Interactor, Router and View
 // Needs to present to view and tell the view what to do
 
 enum FetchError: Error {
@@ -38,8 +38,6 @@ class UserPresenter: AnyPresenter {
     
     var view: AnyView?
     
-    
-    
     func interactorDidFetchUsers(with result: Result<[User], Error>) {
         switch result {
             case .success(let users):
@@ -48,5 +46,4 @@ class UserPresenter: AnyPresenter {
                 view?.update(with: "Something went wrong")
         }
     }
-    
 }

@@ -13,7 +13,7 @@ import Foundation
 // Get data or perform an interaction. When it completes, hand that data to presenter.
 // Presenter will handle what to do with that data
 
-// https://jsonplaceholder.typicode.com/users
+// Sample json -> https://jsonplaceholder.typicode.com/users
 
 protocol AnyInteractor {
     var presenter: AnyPresenter? { get set }
@@ -41,8 +41,6 @@ class UserInteractor: AnyInteractor {
                 self?.presenter?.interactorDidFetchUsers(with: .failure(error))
             }
         }
-        
         task.resume()
     }
-    
 }

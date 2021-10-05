@@ -8,7 +8,7 @@
 import UIKit
 
 // Responsible for UI
-// ViewController
+// Also Can be a ViewController
 // Protocol
 // Reference to presenter
 
@@ -20,7 +20,6 @@ protocol AnyView {
 }
 
 class UserViewController: UIViewController, AnyView, UITableViewDataSource, UITableViewDelegate {
-    
     
     var presenter: AnyPresenter?
     
