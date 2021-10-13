@@ -18,5 +18,5 @@ protocol AnyPresenter {
     var view: AnyView? { get set }
     
     func interactorDidFetchUsers(with result: Result<[User], Error>)
-    
+    func interactorDidFetchPokemons(with result: Result<[Pokemon], Error>)
 }

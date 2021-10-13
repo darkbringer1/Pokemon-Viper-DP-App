@@ -11,6 +11,8 @@ private let reuseIdentifier = "PokedexCell"
 
 class PokeViewController: UICollectionViewController, AnyView {
     
+    
+    
 //    var collectionView: UICollectionView!
     
     var presenter: AnyPresenter?
@@ -53,6 +55,9 @@ class PokeViewController: UICollectionViewController, AnyView {
     }
     
     func update(with error: String) {
+        
+    }
+    func update(with pokemons: [Pokemon]) {
         
     }
     

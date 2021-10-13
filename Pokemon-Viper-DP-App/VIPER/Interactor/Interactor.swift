@@ -19,8 +19,12 @@ import Foundation
 class UserInteractor: AnyInteractor {
     var presenter: AnyPresenter?
     
+    let pokemonApi = "https://pokedex-bb36f.firebaseio.com/pokemon.json"
+    
     func getUsers() {
-        print("Start Fetching")
+        
+        print("Start Fetching Users")
+        
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else { return }
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
             guard let data = data, error == nil else {
@@ -33,6 +37,26 @@ class UserInteractor: AnyInteractor {
                 
             } catch {
                 self?.presenter?.interactorDidFetchUsers(with: .failure(error))
+            }
+        }
+        task.resume()
+    }
+    
+    func fetchPokemon() {
+        
+        guard let url = URL(string: pokemonApi) else { return }
+        
+        let task = URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
+            
+            guard let data = data, error == nil else {
+                self?.presenter?.interactorDidFetchPokemons(with: .failure(FetchError.failed))
+                return
+            }
+            do {
+                let entities = try JSONDecoder().decode([Pokemon].self, from: data)
+                self?.presenter?.interactorDidFetchPokemons(with: .success(entities))
+            } catch {
+                self?.presenter?.interactorDidFetchPokemons(with: .failure(error))
             }
         }
         task.resume()

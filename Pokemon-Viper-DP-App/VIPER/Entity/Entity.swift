@@ -14,8 +14,6 @@ struct User: Codable {
     let name: String
 }
 
-import Foundation
-
 //// MARK: - Pokemon
 //struct Pokemon: Codable {
 //    let count: Int
@@ -29,11 +27,11 @@ import Foundation
 //    let url: String
 //}
 
-class Pokemon {
+class Pokemon: Codable {
     
     var name: String?
     var imageUrl: String?
-    var image: UIImage?
+//    var image: UIImage?
     var id: Int?
     var weight: Int?
     var height: Int?
@@ -41,6 +39,7 @@ class Pokemon {
     var attack: Int?
     var description: String?
     var type: String?
+    
     
     init(id: Int, dictionary: [String: AnyObject]) {
         

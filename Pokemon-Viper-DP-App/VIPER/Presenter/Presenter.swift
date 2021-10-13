@@ -21,6 +21,7 @@ class UserPresenter: AnyPresenter {
     var interactor: AnyInteractor? {
         didSet {
             interactor?.getUsers()
+            interactor?.fetchPokemon()
         }
     }
     
@@ -34,4 +35,16 @@ class UserPresenter: AnyPresenter {
                 view?.update(with: "Something went wrong")
         }
     }
+    
+    func interactorDidFetchPokemons(with result: Result<[Pokemon], Error>) {
+        switch result {
+            case .success(let pokemons):
+                view?.update(with: pokemons)
+            case .failure:
+                view?.update(with: "Interactor Couldn't fetch Pokemons")
+        }
+    }
+    
+    
+    
 }

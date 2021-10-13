@@ -14,4 +14,6 @@ protocol AnyView {
     func update(with users: [User])
     func update(with error: String)
     
+    func update(with pokemons: [Pokemon])
+    
 }

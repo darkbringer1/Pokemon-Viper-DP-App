@@ -11,5 +11,6 @@ protocol AnyInteractor {
     var presenter: AnyPresenter? { get set }
     
     func getUsers()
+    func fetchPokemon()
     
 }

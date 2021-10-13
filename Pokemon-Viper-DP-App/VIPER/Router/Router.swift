@@ -23,15 +23,10 @@ class UserRouter: AnyRouter {
         
         // Assign V.I.P.
         
-//        let layout = UICollectionViewFlowLayout() // Layout is needed to initialize Collection View
-//
-//        let navCont = UINavigationController(rootViewController: PokeViewController(collectionViewLayout: layout))
         let layout = UICollectionViewFlowLayout()
         let navController = UINavigationController(rootViewController: PokeViewController(collectionViewLayout: layout))
         
         var view: AnyView = navController
-        
-        
         var interactor: AnyInteractor = UserInteractor()
         var presenter: AnyPresenter = UserPresenter()
                 
@@ -52,6 +47,8 @@ class UserRouter: AnyRouter {
 
 extension UINavigationController: AnyView {
     
+    
+    
     var presenter: AnyPresenter? {
         get {
             return self.presenter
@@ -66,6 +63,10 @@ extension UINavigationController: AnyView {
     }
     
     func update(with error: String) {
+        
+    }
+    
+    func update(with pokemons: [Pokemon]) {
         
     }
     
