@@ -12,12 +12,6 @@ import UIKit
 // Protocol
 // Reference to presenter
 
-protocol AnyView {
-    var presenter: AnyPresenter? { get set }
-    
-    func update(with users: [User])
-    func update(with error: String)
-}
 
 class UserViewController: UIViewController, AnyView, UITableViewDataSource, UITableViewDelegate {
     

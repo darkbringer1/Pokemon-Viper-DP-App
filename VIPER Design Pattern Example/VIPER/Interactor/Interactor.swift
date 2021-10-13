@@ -15,12 +15,6 @@ import Foundation
 
 // Sample json -> https://jsonplaceholder.typicode.com/users
 
-protocol AnyInteractor {
-    var presenter: AnyPresenter? { get set }
-    
-    func getUsers()
-    
-}
 
 class UserInteractor: AnyInteractor {
     var presenter: AnyPresenter?

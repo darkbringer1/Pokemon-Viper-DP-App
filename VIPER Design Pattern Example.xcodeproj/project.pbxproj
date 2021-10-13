@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,13 @@
 		D87887AE270C940D00F0574C /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87887AD270C940D00F0574C /* Presenter.swift */; };
 		D87887B0270C941B00F0574C /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87887AF270C941B00F0574C /* Entity.swift */; };
 		D87887B2270C942200F0574C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87887B1270C942200F0574C /* Router.swift */; };
+		D8E10822271594770035499A /* AnyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E10821271594770035499A /* AnyRouter.swift */; };
+		D8E10824271594C70035499A /* AnyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E10823271594C70035499A /* AnyPresenter.swift */; };
+		D8E10826271595040035499A /* AnyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E10825271595040035499A /* AnyInteractor.swift */; };
+		D8E10829271595250035499A /* AnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E10828271595250035499A /* AnyView.swift */; };
+		D8E1082B271599DA0035499A /* PokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1082A271599DA0035499A /* PokeView.swift */; };
+		D8E1082E2715A1040035499A /* BaseComponents in Frameworks */ = {isa = PBXBuildFile; productRef = D8E1082D2715A1040035499A /* BaseComponents */; };
+		D8E108322715C2490035499A /* PokedexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E108312715C2490035499A /* PokedexCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +64,12 @@
 		D87887AD270C940D00F0574C /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		D87887AF270C941B00F0574C /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		D87887B1270C942200F0574C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		D8E10821271594770035499A /* AnyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRouter.swift; sourceTree = "<group>"; };
+		D8E10823271594C70035499A /* AnyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyPresenter.swift; sourceTree = "<group>"; };
+		D8E10825271595040035499A /* AnyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyInteractor.swift; sourceTree = "<group>"; };
+		D8E10828271595250035499A /* AnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyView.swift; sourceTree = "<group>"; };
+		D8E1082A271599DA0035499A /* PokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeView.swift; sourceTree = "<group>"; };
+		D8E108312715C2490035499A /* PokedexCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E1082E2715A1040035499A /* BaseComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,13 +153,59 @@
 		D87887A6270C93DF00F0574C /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
-				D87887A9270C93F600F0574C /* View.swift */,
-				D87887AB270C940000F0574C /* Interactor.swift */,
-				D87887AD270C940D00F0574C /* Presenter.swift */,
-				D87887AF270C941B00F0574C /* Entity.swift */,
-				D87887B1270C942200F0574C /* Router.swift */,
+				D8E1081C271594350035499A /* View */,
+				D8E1081D2715943D0035499A /* Interactor */,
+				D8E1081E271594460035499A /* Presenter */,
+				D8E1081F2715944D0035499A /* Entity */,
+				D8E10820271594530035499A /* Router */,
 			);
 			path = VIPER;
+			sourceTree = "<group>";
+		};
+		D8E1081C271594350035499A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D87887A9270C93F600F0574C /* View.swift */,
+				D8E1082A271599DA0035499A /* PokeView.swift */,
+				D8E108312715C2490035499A /* PokedexCell.swift */,
+				D8E10828271595250035499A /* AnyView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8E1081D2715943D0035499A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D87887AB270C940000F0574C /* Interactor.swift */,
+				D8E10825271595040035499A /* AnyInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D8E1081E271594460035499A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D87887AD270C940D00F0574C /* Presenter.swift */,
+				D8E10823271594C70035499A /* AnyPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D8E1081F2715944D0035499A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D87887AF270C941B00F0574C /* Entity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		D8E10820271594530035499A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D87887B1270C942200F0574C /* Router.swift */,
+				D8E10821271594770035499A /* AnyRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +224,9 @@
 			dependencies = (
 			);
 			name = "VIPER Design Pattern Example";
+			packageProductDependencies = (
+				D8E1082D2715A1040035499A /* BaseComponents */,
+			);
 			productName = "VIPER Design Pattern Example";
 			productReference = D8788770270C937500F0574C /* VIPER Design Pattern Example.app */;
 			productType = "com.apple.product-type.application";
@@ -235,6 +298,9 @@
 				Base,
 			);
 			mainGroup = D8788767270C937500F0574C;
+			packageReferences = (
+				D8E1082C2715A1040035499A /* XCRemoteSwiftPackageReference "BaseComponents" */,
+			);
 			productRefGroup = D8788771270C937500F0574C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -277,14 +343,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E1082B271599DA0035499A /* PokeView.swift in Sources */,
+				D8E10822271594770035499A /* AnyRouter.swift in Sources */,
+				D8E108322715C2490035499A /* PokedexCell.swift in Sources */,
 				D87887AC270C940000F0574C /* Interactor.swift in Sources */,
 				D87887AE270C940D00F0574C /* Presenter.swift in Sources */,
+				D8E10824271594C70035499A /* AnyPresenter.swift in Sources */,
 				D878877E270C937500F0574C /* VIPER_Design_Pattern_Example.xcdatamodeld in Sources */,
 				D87887B2270C942200F0574C /* Router.swift in Sources */,
 				D87887B0270C941B00F0574C /* Entity.swift in Sources */,
 				D87887AA270C93F600F0574C /* View.swift in Sources */,
 				D8788774270C937500F0574C /* AppDelegate.swift in Sources */,
 				D8788776270C937500F0574C /* SceneDelegate.swift in Sources */,
+				D8E10826271595040035499A /* AnyInteractor.swift in Sources */,
+				D8E10829271595250035499A /* AnyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,6 +681,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8E1082C2715A1040035499A /* XCRemoteSwiftPackageReference "BaseComponents" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/darkbringer1/BaseComponents.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.18;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8E1082D2715A1040035499A /* BaseComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8E1082C2715A1040035499A /* XCRemoteSwiftPackageReference "BaseComponents" */;
+			productName = BaseComponents;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D878877C270C937500F0574C /* VIPER_Design_Pattern_Example.xcdatamodeld */ = {
