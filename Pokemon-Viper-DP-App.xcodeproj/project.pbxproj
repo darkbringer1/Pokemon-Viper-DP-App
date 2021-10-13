@@ -46,17 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D8788770270C937500F0574C /* VIPER Design Pattern Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER Design Pattern Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8788770270C937500F0574C /* Pokemon-Viper-DP-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokemon-Viper-DP-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8788773270C937500F0574C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8788775270C937500F0574C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D878877D270C937500F0574C /* VIPER_Design_Pattern_Example.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VIPER_Design_Pattern_Example.xcdatamodel; sourceTree = "<group>"; };
 		D878877F270C937700F0574C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8788782270C937700F0574C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8788784270C937700F0574C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8788789270C937800F0574C /* VIPER Design Pattern ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER Design Pattern ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8788789270C937800F0574C /* Pokemon-Viper-DP-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pokemon-Viper-DP-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D878878D270C937800F0574C /* VIPER_Design_Pattern_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_Design_Pattern_ExampleTests.swift; sourceTree = "<group>"; };
 		D878878F270C937800F0574C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8788794270C937800F0574C /* VIPER Design Pattern ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER Design Pattern ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8788794270C937800F0574C /* Pokemon-Viper-DP-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pokemon-Viper-DP-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8788798270C937800F0574C /* VIPER_Design_Pattern_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_Design_Pattern_ExampleUITests.swift; sourceTree = "<group>"; };
 		D878879A270C937800F0574C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D87887A9270C93F600F0574C /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -101,9 +101,9 @@
 		D8788767270C937500F0574C = {
 			isa = PBXGroup;
 			children = (
-				D8788772270C937500F0574C /* VIPER Design Pattern Example */,
-				D878878C270C937800F0574C /* VIPER Design Pattern ExampleTests */,
-				D8788797270C937800F0574C /* VIPER Design Pattern ExampleUITests */,
+				D8788772270C937500F0574C /* Pokemon-Viper-DP-App */,
+				D878878C270C937800F0574C /* Pokemon-Viper-DP-AppTests */,
+				D8788797270C937800F0574C /* Pokemon-Viper-DP-AppUITests */,
 				D8788771270C937500F0574C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,14 +111,14 @@
 		D8788771270C937500F0574C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8788770270C937500F0574C /* VIPER Design Pattern Example.app */,
-				D8788789270C937800F0574C /* VIPER Design Pattern ExampleTests.xctest */,
-				D8788794270C937800F0574C /* VIPER Design Pattern ExampleUITests.xctest */,
+				D8788770270C937500F0574C /* Pokemon-Viper-DP-App.app */,
+				D8788789270C937800F0574C /* Pokemon-Viper-DP-AppTests.xctest */,
+				D8788794270C937800F0574C /* Pokemon-Viper-DP-AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D8788772270C937500F0574C /* VIPER Design Pattern Example */ = {
+		D8788772270C937500F0574C /* Pokemon-Viper-DP-App */ = {
 			isa = PBXGroup;
 			children = (
 				D87887A6270C93DF00F0574C /* VIPER */,
@@ -129,25 +129,25 @@
 				D8788784270C937700F0574C /* Info.plist */,
 				D878877C270C937500F0574C /* VIPER_Design_Pattern_Example.xcdatamodeld */,
 			);
-			path = "VIPER Design Pattern Example";
+			path = "Pokemon-Viper-DP-App";
 			sourceTree = "<group>";
 		};
-		D878878C270C937800F0574C /* VIPER Design Pattern ExampleTests */ = {
+		D878878C270C937800F0574C /* Pokemon-Viper-DP-AppTests */ = {
 			isa = PBXGroup;
 			children = (
 				D878878D270C937800F0574C /* VIPER_Design_Pattern_ExampleTests.swift */,
 				D878878F270C937800F0574C /* Info.plist */,
 			);
-			path = "VIPER Design Pattern ExampleTests";
+			path = "Pokemon-Viper-DP-AppTests";
 			sourceTree = "<group>";
 		};
-		D8788797270C937800F0574C /* VIPER Design Pattern ExampleUITests */ = {
+		D8788797270C937800F0574C /* Pokemon-Viper-DP-AppUITests */ = {
 			isa = PBXGroup;
 			children = (
 				D8788798270C937800F0574C /* VIPER_Design_Pattern_ExampleUITests.swift */,
 				D878879A270C937800F0574C /* Info.plist */,
 			);
-			path = "VIPER Design Pattern ExampleUITests";
+			path = "Pokemon-Viper-DP-AppUITests";
 			sourceTree = "<group>";
 		};
 		D87887A6270C93DF00F0574C /* VIPER */ = {
@@ -211,9 +211,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D878876F270C937500F0574C /* VIPER Design Pattern Example */ = {
+		D878876F270C937500F0574C /* Pokemon-Viper-DP-App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D878879D270C937800F0574C /* Build configuration list for PBXNativeTarget "VIPER Design Pattern Example" */;
+			buildConfigurationList = D878879D270C937800F0574C /* Build configuration list for PBXNativeTarget "Pokemon-Viper-DP-App" */;
 			buildPhases = (
 				D878876C270C937500F0574C /* Sources */,
 				D878876D270C937500F0574C /* Frameworks */,
@@ -223,17 +223,17 @@
 			);
 			dependencies = (
 			);
-			name = "VIPER Design Pattern Example";
+			name = "Pokemon-Viper-DP-App";
 			packageProductDependencies = (
 				D8E1082D2715A1040035499A /* BaseComponents */,
 			);
 			productName = "VIPER Design Pattern Example";
-			productReference = D8788770270C937500F0574C /* VIPER Design Pattern Example.app */;
+			productReference = D8788770270C937500F0574C /* Pokemon-Viper-DP-App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D8788788270C937800F0574C /* VIPER Design Pattern ExampleTests */ = {
+		D8788788270C937800F0574C /* Pokemon-Viper-DP-AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D87887A0270C937800F0574C /* Build configuration list for PBXNativeTarget "VIPER Design Pattern ExampleTests" */;
+			buildConfigurationList = D87887A0270C937800F0574C /* Build configuration list for PBXNativeTarget "Pokemon-Viper-DP-AppTests" */;
 			buildPhases = (
 				D8788785270C937800F0574C /* Sources */,
 				D8788786270C937800F0574C /* Frameworks */,
@@ -244,14 +244,14 @@
 			dependencies = (
 				D878878B270C937800F0574C /* PBXTargetDependency */,
 			);
-			name = "VIPER Design Pattern ExampleTests";
+			name = "Pokemon-Viper-DP-AppTests";
 			productName = "VIPER Design Pattern ExampleTests";
-			productReference = D8788789270C937800F0574C /* VIPER Design Pattern ExampleTests.xctest */;
+			productReference = D8788789270C937800F0574C /* Pokemon-Viper-DP-AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D8788793270C937800F0574C /* VIPER Design Pattern ExampleUITests */ = {
+		D8788793270C937800F0574C /* Pokemon-Viper-DP-AppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D87887A3270C937800F0574C /* Build configuration list for PBXNativeTarget "VIPER Design Pattern ExampleUITests" */;
+			buildConfigurationList = D87887A3270C937800F0574C /* Build configuration list for PBXNativeTarget "Pokemon-Viper-DP-AppUITests" */;
 			buildPhases = (
 				D8788790270C937800F0574C /* Sources */,
 				D8788791270C937800F0574C /* Frameworks */,
@@ -262,9 +262,9 @@
 			dependencies = (
 				D8788796270C937800F0574C /* PBXTargetDependency */,
 			);
-			name = "VIPER Design Pattern ExampleUITests";
+			name = "Pokemon-Viper-DP-AppUITests";
 			productName = "VIPER Design Pattern ExampleUITests";
-			productReference = D8788794270C937800F0574C /* VIPER Design Pattern ExampleUITests.xctest */;
+			productReference = D8788794270C937800F0574C /* Pokemon-Viper-DP-AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -289,7 +289,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D878876B270C937500F0574C /* Build configuration list for PBXProject "VIPER Design Pattern Example" */;
+			buildConfigurationList = D878876B270C937500F0574C /* Build configuration list for PBXProject "Pokemon-Viper-DP-App" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -305,9 +305,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D878876F270C937500F0574C /* VIPER Design Pattern Example */,
-				D8788788270C937800F0574C /* VIPER Design Pattern ExampleTests */,
-				D8788793270C937800F0574C /* VIPER Design Pattern ExampleUITests */,
+				D878876F270C937500F0574C /* Pokemon-Viper-DP-App */,
+				D8788788270C937800F0574C /* Pokemon-Viper-DP-AppTests */,
+				D8788793270C937800F0574C /* Pokemon-Viper-DP-AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -381,12 +381,12 @@
 /* Begin PBXTargetDependency section */
 		D878878B270C937800F0574C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D878876F270C937500F0574C /* VIPER Design Pattern Example */;
+			target = D878876F270C937500F0574C /* Pokemon-Viper-DP-App */;
 			targetProxy = D878878A270C937800F0574C /* PBXContainerItemProxy */;
 		};
 		D8788796270C937800F0574C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D878876F270C937500F0574C /* VIPER Design Pattern Example */;
+			target = D878876F270C937500F0574C /* Pokemon-Viper-DP-App */;
 			targetProxy = D8788795270C937800F0574C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -575,7 +575,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPER Design Pattern Example.app/VIPER Design Pattern Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pokemon-Viper-DP-App.app/Pokemon-Viper-DP-App";
 			};
 			name = Debug;
 		};
@@ -597,7 +597,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPER Design Pattern Example.app/VIPER Design Pattern Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pokemon-Viper-DP-App.app/Pokemon-Viper-DP-App";
 			};
 			name = Release;
 		};
@@ -644,7 +644,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D878876B270C937500F0574C /* Build configuration list for PBXProject "VIPER Design Pattern Example" */ = {
+		D878876B270C937500F0574C /* Build configuration list for PBXProject "Pokemon-Viper-DP-App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D878879B270C937800F0574C /* Debug */,
@@ -653,7 +653,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D878879D270C937800F0574C /* Build configuration list for PBXNativeTarget "VIPER Design Pattern Example" */ = {
+		D878879D270C937800F0574C /* Build configuration list for PBXNativeTarget "Pokemon-Viper-DP-App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D878879E270C937800F0574C /* Debug */,
@@ -662,7 +662,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D87887A0270C937800F0574C /* Build configuration list for PBXNativeTarget "VIPER Design Pattern ExampleTests" */ = {
+		D87887A0270C937800F0574C /* Build configuration list for PBXNativeTarget "Pokemon-Viper-DP-AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D87887A1270C937800F0574C /* Debug */,
@@ -671,7 +671,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D87887A3270C937800F0574C /* Build configuration list for PBXNativeTarget "VIPER Design Pattern ExampleUITests" */ = {
+		D87887A3270C937800F0574C /* Build configuration list for PBXNativeTarget "Pokemon-Viper-DP-AppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D87887A4270C937800F0574C /* Debug */,
